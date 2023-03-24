@@ -5,7 +5,7 @@ const Information = () => {
     const copy = () => {
         alert('청첩장 주소가 복사됐습니다');
     };
-    const WEDDING_INVITATION_URL = 'https://EunaSale.github.io/wedding';
+    const WEDDING_INVITATION_URL = 'https://eunasale.github.io/wedding';
     return (
         <div className="content footer">
             <div className="shared">
