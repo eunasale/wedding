@@ -47,7 +47,8 @@ a {
 .home .name img{object-fit: contain;}
 .home .title img{width: 100%;}
 .home .location{font-size: 1.4rem; padding: 2% 0;}
-.home .day{font-size: 1.1rem;color: #777}
+.home .day{font-size: 1.1rem;color: #777; display: flex;justify-content: center; width: 100%;margin-top: 30px;}
+.home .day .heartIcon{max-width: 20px; max-height: 20px;}
 .grid .square {border: 1px solid #ec6c61; border-left: 0px; padding: 2px;}
 
 /* place */
@@ -274,52 +275,6 @@ a {
   top: 0;
 }
 
-
-/*.timeline div {
-  padding: 0;
-  height: 40px;
-}
-.timeline hr {
-  border-top: 3px solid #ddd;
-  margin: 0;
-  top: 17px;
-  position: relative;
-}
-.timeline .col-2 {
-  display: flex;
-  overflow: hidden;
-}
-.timeline .corner {
-  border: 3px solid #ddd;
-  width: 100%;
-  position: relative;
-  border-radius: 15px;
-}
-.timeline .top-right {
-  left: 50%;
-  top: -50%;
-}
-.timeline .left-bottom {
-  left: -50%;
-  top: calc(50% - 3px);
-}
-.timeline .top-left {
-  left: -50%;
-  top: -50%;
-}
-.timeline .right-bottom {
-  left: 50%;
-  top: calc(50% - 3px);
-}
-
-.move h5 {
-  font-size: 1.1rem !important;
-}
-
-.move p {
-  font-size: 1rem !important;
-}*/
-
 /* Timeline Container */
 .timeline {
   background: var(--primary-color);
@@ -438,4 +393,64 @@ a {
 /* setting dot to the right if the card is odd */
 .timeline .card:nth-child(even) > .info > .day::before {
   right: -45px;
+}
+
+
+/* Month header */
+.month {
+  width: 100%;
+  text-align: center;
+  background-color: #f8f9fb;
+}
+
+/* Month list */
+.month ul {
+  margin: 0;
+  padding: 30px 10px 10px 10px;
+}
+
+.month ul li {
+  color: #777;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color:#f8f9fb;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+  padding: 10px 0;
+  background: #f8f9fb;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin: 10px 0px;
+  font-size:1.0rem;
+  color: #777;
+}
+
+/* Highlight the "current" day */
+.days li .active {
+  padding: 10px;
+  background: #ccd7d1;
+  color: white !important;
+  border-radius: 50%;
 }

@@ -22,13 +22,13 @@ const Information = () => {
             <div className="card">
               <div className="info">
                 <h3 className="day">2019년 5월</h3>
-                <p>50살까지 결혼 안했으면 우리 둘이 결혼하자는 말로 시작된 인연</p>
+                <p>50살까지 결혼 안했으면<br /> 우리 둘이 결혼하자는 말로 시작된 인연</p>
               </div>
             </div>
             <div className="card">
               <div className="info">
                 <h3 className="day">2021년 5월</h3>
-                <p>서울에서 여수로 내려와 함께하는 새출발<br />같은 직업으로 같은 시간을 보내고 같은 생각을 하며 보내기 시작한 일상</p>
+                <p>서울에서 여수로 내려와 함께하는 새출발<br />같은 직업으로 같은 시간을 보내고<br /> 같은 생각을 하며 보내기 시작한 일상</p>
               </div>
             </div>
             <div className="card">

@@ -3,19 +3,21 @@ import main from '../assets/img/main_new.jpeg';
 import heart from '../assets/img/heart.png';
 import { motion } from 'framer-motion';
 
+const WEDDING_DATE = "2023-05-06T03:30:00Z";
 function Home() {
     const [dayText, setDayText] = useState(null);
     useEffect(() => {
-        const dday = new Date("2023-05-06T03:30:00Z");
+        const dday = new Date(WEDDING_DATE);
         const current = new Date();
         const gap = Math.ceil((dday.getTime() - current.getTime()) / (1000 * 60 * 60 * 24));
         
         if (gap >= 0){
-            setDayText(`결혼식까지 ${gap}일 남았습니다.`);
+            setDayText(`의 결혼식 ${gap}일 전`);
         } else {
-            setDayText(`결혼한 지 ${-gap}일 지났습니다.`);
+            setDayText(` 결혼한 지 ${-(gap+1)}일 째`);
         }
     }, []);
+
     const variants = {
         hidden: {
             rotate: 15
@@ -53,13 +55,69 @@ function Home() {
             </div>
             <div className="location">
                 <p>
-                    2023. 05. 16. 토요일 낮 12:30 <br />
+                    2023. 05. 06. 토요일 낮 12:30 <br />
                     소노캄 여수
                 </p>
             </div>
-            <div className="day">
-                <p> {dayText} </p>
+            <div class="month">
+                <ul>
+                    <li>23년 5월</li>
+                </ul>
             </div>
+            <ul class="weekdays">
+                <li>일</li>
+                <li>월</li>
+                <li>화</li>
+                <li>수</li>
+                <li>목</li>
+                <li>금</li>
+                <li>토</li>
+            </ul>
+            <ul class="days">
+                <li></li>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li><span class="active">6</span></li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+                <li>11</li>
+                <li>12</li>
+                <li>13</li>
+                <li>14</li>
+                <li>15</li>
+                <li>16</li>
+                <li>17</li>
+                <li>18</li>
+                <li>19</li>
+                <li>20</li>
+                <li>21</li>
+                <li>22</li>
+                <li>23</li>
+                <li>24</li>
+                <li>25</li>
+                <li>26</li>
+                <li>27</li>
+                <li>28</li>
+                <li>29</li>
+                <li>30</li>
+                <li>31</li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <div className="day">
+                - 양세일
+                    <motion.div initial="hidden" animate="visible" variants={variants} className="small">
+                        <img className="heartIcon" src={heart} /> 
+                    </motion.div>
+                고은아{dayText} -
+            </div>
+            </ul>
+            
         </div>
     );
 }
