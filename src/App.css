@@ -405,28 +405,30 @@ a {
 
 /* Month list */
 .month ul {
-  margin: 0;
+  margin: 0 0 15px 0;
   padding: 30px 10px 10px 10px;
 }
 
 .month ul li {
+  list-style-type: none;
   color: #777;
   font-size: 1.1rem;
-  text-transform: uppercase;
   letter-spacing: 3px;
 }
 
 /* Weekdays (Mon-Sun) */
 .weekdays {
+  font-size: 1.1rem;
   margin: 0;
   padding: 10px 0;
   background-color:#f8f9fb;
 }
 
 .weekdays li {
+  list-style-type: none;
   display: inline-block;
   width: 13.6%;
-  color: #666;
+  color: #777;
   text-align: center;
 }
 
