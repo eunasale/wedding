@@ -11,11 +11,6 @@ import photo7 from '../assets/img/007.jpeg';
 import photo8 from '../assets/img/008.jpeg';
 import photo9 from '../assets/img/009.jpeg';
 import photo10 from '../assets/img/010.jpeg';
-import photo11 from '../assets/img/011.jpeg';
-import photo12 from '../assets/img/012.jpeg';
-import photo13 from '../assets/img/013.jpeg';
-import photo14 from '../assets/img/014.jpeg';
-
 
 const images = [
     { original: photo1, thumbnail: photo1 },
@@ -26,12 +21,8 @@ const images = [
     { original: photo6, thumbnail: photo6 },
     { original: photo7, thumbnail: photo7 },
     { original: photo8, thumbnail: photo8 },
-    { original: photo9, thumbnail: photo9 },
     { original: photo10, thumbnail: photo10 },
-    { original: photo11, thumbnail: photo11 },
-    { original: photo12, thumbnail: photo12 },
-    { original: photo13, thumbnail: photo13 },
-    { original: photo14, thumbnail: photo14 },
+    { original: photo9, thumbnail: photo9 },
 ];
 function Gallery() {
     const animatedItem = useScrollFadeIn('up', 1, 0);

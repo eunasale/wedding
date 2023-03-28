@@ -72,7 +72,7 @@ function Place() {
                 <div className="transBox">
                     <div className="means">여수 엑스포역 &rarr; 소노캄 여수</div>
                     <div className="desc">
-                        '오동도 방면' 정류장에서 시내버스 2번 탐승 &rarr; '오동도 입구' 정류장에서 하차
+                        '오동도 방면' 정류장에서 시내버스 2번 탑승 &rarr; '오동도 입구' 정류장에서 하차
                         <br />약 10분 소요
                     </div>
                 </div>

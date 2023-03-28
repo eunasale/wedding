@@ -59,12 +59,12 @@ function Home() {
                     소노캄 여수
                 </p>
             </div>
-            <div class="month">
+            <div className="month">
                 <ul>
                     <li>23년 5월</li>
                 </ul>
             </div>
-            <ul class="weekdays">
+            <ul className="weekdays">
                 <li>일</li>
                 <li>월</li>
                 <li>화</li>
@@ -73,14 +73,14 @@ function Home() {
                 <li>금</li>
                 <li>토</li>
             </ul>
-            <ul class="days">
+            <ul className="days">
                 <li></li>
                 <li>1</li>
                 <li>2</li>
                 <li>3</li>
                 <li>4</li>
                 <li>5</li>
-                <li><span class="active">6</span></li>
+                <li><span className="active">6</span></li>
                 <li>7</li>
                 <li>8</li>
                 <li>9</li>

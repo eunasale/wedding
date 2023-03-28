@@ -34,7 +34,7 @@ const Information = () => {
             <div className="card">
               <div className="info">
                 <h3 className="day">2023년 5월</h3>
-                <p>6년은 친구로서, 4년은 연인으로서 함께한 10년의 시간<br />이제 남은 인생은 배우자로서 함께합니다!</p>
+                <p>6년은 친구로서, 4년은 연인으로서<br />함께한 10년의 시간<br />이제 남은 인생은 배우자로서 함께합니다!</p>
               </div>
             </div>
           </div>
