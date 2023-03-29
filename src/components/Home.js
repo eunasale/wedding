@@ -3,7 +3,7 @@ import home from '../assets/img/home.jpeg';
 import heart from '../assets/img/heart.png';
 import { motion } from 'framer-motion';
 
-const WEDDING_DATE = "2023-05-06T03:30:00Z";
+const WEDDING_DATE = "2023-05-06T12:30:00";
 function Home() {
     const [dayText, setDayText] = useState(null);
     useEffect(() => {
