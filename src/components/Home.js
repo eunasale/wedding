@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import main from '../assets/img/main_new.jpeg';
+import home from '../assets/img/home.jpeg';
 import heart from '../assets/img/heart.png';
 import { motion } from 'framer-motion';
 
@@ -35,7 +35,7 @@ function Home() {
     };
     return (
         <div className="content home">
-            <div className="name">
+            {/*<div className="name">
                 <div className="heart">
                     <div className="tag">
                         <p>양세일</p>
@@ -49,14 +49,30 @@ function Home() {
                         <p>고은아</p>
                     </div>
                 </div>
-            </div>
+            </div>*/}
             <div className="title">
-                <img src={main} />
+                <img src={home} />
+            </div>
+            <div className="bride">
+                <div>
+                    신랑
+                </div>
+                <div>
+                    신부
+                </div>
+            </div>
+            <div className="name">
+                <div>
+                    양  세  일
+                </div>
+                <div>
+                    고  은  아
+                </div>
             </div>
             <div className="location">
                 <p>
-                    2023. 05. 06. 토요일 낮 12:30 <br />
-                    소노캄 여수
+                    2023. 05. 06 SAT PM 12:30 <br />
+                    소노캄 여수 1F 그랜드볼룸
                 </p>
             </div>
             <div className="month">

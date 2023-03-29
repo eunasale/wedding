@@ -1,6 +1,7 @@
 import React from 'react';
 import ImageGallery from 'react-image-gallery';
 import useScrollFadeIn from '..//hooks/useScrollFadeIn';
+import main from '../assets/img/main_new.jpeg';
 import photo1 from '../assets/img/001.jpeg';
 import photo2 from '../assets/img/002.jpeg';
 import photo3 from '../assets/img/003.jpeg';
@@ -13,6 +14,7 @@ import photo9 from '../assets/img/009.jpeg';
 import photo10 from '../assets/img/010.jpeg';
 
 const images = [
+    { original: main, thumbnail: main },
     { original: photo1, thumbnail: photo1 },
     { original: photo2, thumbnail: photo2 },
     { original: photo3, thumbnail: photo3 },
