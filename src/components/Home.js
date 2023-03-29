@@ -35,21 +35,6 @@ function Home() {
     };
     return (
         <div className="content home">
-            {/*<div className="name">
-                <div className="heart">
-                    <div className="tag">
-                        <p>양세일</p>
-                    </div>
-                    <div className="icon">
-                        <motion.div initial="hidden" animate="visible" variants={variants} className="small">
-                            <img src={heart} />
-                        </motion.div>
-                    </div>
-                    <div className="tag">
-                        <p>고은아</p>
-                    </div>
-                </div>
-            </div>*/}
             <div className="title">
                 <img src={home} />
             </div>
