@@ -9,7 +9,7 @@ function Home() {
     useEffect(() => {
         const dday = new Date(WEDDING_DATE);
         const current = new Date();
-        const gap = Math.ceil((dday.getTime() - current.getTime()) / (1000 * 60 * 60 * 24)) - 1;
+        const gap = Math.ceil((dday - current) / (1000 * 60 * 60 * 24));
         
         if (gap >= 0){
             setDayText(`의 결혼식 ${gap}일 전`);
