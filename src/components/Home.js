@@ -9,12 +9,12 @@ function Home() {
     useEffect(() => {
         const dday = new Date(WEDDING_DATE);
         const current = new Date();
-        const gap = Math.ceil((dday.getTime() - current.getTime()) / (1000 * 60 * 60 * 24));
+        const gap = Math.ceil((dday.getTime() - current.getTime()) / (1000 * 60 * 60 * 24)) - 1;
         
         if (gap >= 0){
             setDayText(`의 결혼식 ${gap}일 전`);
         } else {
-            setDayText(` 결혼한 지 ${-(gap+1)}일 째`);
+            setDayText(` 결혼한 지 ${-(gap-1)}일 째`);
         }
     }, []);
 
@@ -48,10 +48,10 @@ function Home() {
             </div>
             <div className="name">
                 <div>
-                    양  세  일
+                    양 세 일
                 </div>
                 <div>
-                    고  은  아
+                    고 은 아
                 </div>
             </div>
             <div className="location">

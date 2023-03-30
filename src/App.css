@@ -43,12 +43,12 @@ a {
 .home{padding: 0 0 10% 0;}
 .home .title img{width: 100%;}
 .home .name{padding: 0 15% 0 15%;font-size: 1.4rem; margin-bottom: 5%; display: flex; justify-content: center;}
-.home .name div{ width: 50%;}
+.home .name div{width: 50%;}
 .home .name :first-child{border-right: 2px solid #f5d999;}
 .home .bride{padding: 20px 15% 0 15%;font-size: 1.0rem;display: flex; justify-content: center; color: #f5d999;}
 .home .bride :first-child{border-right: 2px solid #f5d999;}
-.home .bride div{ width: 50%;}
-.home .location{font-size: 1.2rem; color: #999;}
+.home .bride div{width: 50%;}
+.home .location{font-size: 1.2rem; color: #999;margin-top: 30px;}
 .home .day{font-size: 1.1rem;color: #999; display: flex;justify-content: center; width: 100%;margin-top: 30px;}
 .home .day .heartIcon{max-width: 20px; max-height: 20px;}
 .grid .square {border: 1px solid #ec6c61; border-left: 0px; padding: 2px;}
