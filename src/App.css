@@ -84,7 +84,7 @@ a {
 
 /* gallery */
 .container .gallery {margin:20% 6%}
-.gallery .info{padding: 10% 10%; font-size: 1.0rem; line-height: 20px;color: #777;}
+.gallery .info{padding: 10% 10%; font-size: 1.1rem; line-height: 20px;color: #aaa;}
 .image-gallery-thumbnail .image-gallery-thumbnail-image{opacity: 0.5; cursor: pointer; border-radius: 20px;}
 .image-gallery-thumbnail.active .image-gallery-thumbnail-image{opacity: 1;}
 .image-gallery-icon{color:#fff;transition:all .3s ease-out;appearance:none;background-color:transparent;border:0;cursor:pointer;outline:none;position:absolute;z-index:4;filter:drop-shadow(0 2px 2px #1a1a1a)}
