@@ -32,6 +32,13 @@ function Gallery() {
         <div {...animatedItem} className="content gallery">
             <h2 className="title">갤러리</h2>
             <ImageGallery showPlayButton={false} showFullscreenButton={false} items={images} />
+            <div className="info">
+                예식 시작 1시간 전부터 <br />
+                포토부스가 설치될 예정입니다 <br /><br />
+                귀한 발걸음 해주신 여러분의 <br />
+                환한 미소와 소중한 추억을 <br />
+                사진에 담아가세요
+            </div>
         </div>
     );
 }
